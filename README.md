@@ -1,16 +1,64 @@
-# React + Vite
+# 🌤️ SkyCast — Modern React Weather Forecasting App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A real-time, responsive weather dashboard built with **React**, **Vite**, **Lucide Icons**, and the **Open-Meteo API** (zero API keys required).
 
-Currently, two official plugins are available:
+![SkyCast Preview](src/assets/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 **Live Search with Autocomplete**: Instant debounced search for cities, regions, and countries worldwide.
+- 📍 **GPS Geolocation**: 1-click detection of your local weather via browser geolocation & reverse geocoding.
+- 🌡️ **Interactive Units**: Instant toggle between **Metric (°C, km/h, mm)** and **Imperial (°F, mph, in)** with local storage persistence.
+- 🎨 **Dynamic Atmosphere Themes**: UI ambient lighting and backdrop gradients dynamically adapt to active conditions (Sunny, Starry Night, Rain, Thunderstorm, Snow, Fog).
+- ⏱️ **24-Hour Hourly Timeline**: Smooth horizontal scroll tracking hour-by-hour temperatures, condition icons, and precipitation probability.
+- 📅 **7-Day Extended Forecast**: Normalized high/low temperature bars with expandable details (Sunrise, Sunset, Max UV, Max Wind, Rain sum).
+- 🧭 **Atmospheric Metrics Grid**:
+  - **Wind & 360° Compass**: Direction needle and gust tracking.
+  - **Air Quality Index (AQI)**: US AQI meter with PM2.5 and PM10 breakdown.
+  - **UV Index**: Risk levels and sunscreen advisory.
+  - **Daylight Arc**: Visual sun path tracking time until sunset/sunrise.
+  - **Humidity & Dew Point**: Barometric pressure and atmospheric visibility.
+- ⭐ **Saved Favorites & Trending Hub**: Quick access to saved locations and popular world cities.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/priyanka19102005/practice.git
+cd practice
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start development server
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 🛠️ Built With
+
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite 6](https://vite.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **APIs**: [Open-Meteo API](https://open-meteo.com/) (Forecast, Geocoding, Air Quality) & [OpenStreetMap](https://www.openstreetmap.org/)
+- **Styling**: Pure Modern CSS with Glassmorphism, CSS Variables, and Flexbox/Grid
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
